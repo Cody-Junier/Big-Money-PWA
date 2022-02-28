@@ -7,8 +7,9 @@ require('dotenv').config()
 console.log(process.env.test)
 console.log(process.env.MONGODB_URI2)
 const PORT = process.env.PORT || 3001;
-const MONGODB_URI ='mongodb+srv://codyjunier:Mastershake3!@cluster0.4bjws.mongodb.net/Big-Money?'
-// .env.MONGODB_URI || "mongodb://localhost/budget";
+const MONGODB_URI ="mongodb://localhost/budget"
+// 'mongodb+srv://codyjunier:Mastershake3!@cluster0.4bjws.mongodb.net/Big-Money?'
+// process.env.MONGODB_URI || ;
 const app = express();
 
 app.use(logger("dev"));
